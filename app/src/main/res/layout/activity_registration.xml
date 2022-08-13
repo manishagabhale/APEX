@@ -68,25 +68,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/first_name"
+            android:text="@string/full_name"
             android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/last_name"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/edit_full_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -98,43 +87,6 @@
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_text_bg"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:padding="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-
-        <EditText
-            android:id="@+id/edt_contact"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_text_bg"
-            android:ems="10"
-            android:inputType="number"
-            android:padding="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/contact_number"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
         <TextView
             android:id="@+id/textView4"
@@ -145,10 +97,11 @@
             android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/edt_contact" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_full_name" />
+
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/edt_email_id"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -161,17 +114,43 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_number"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email_id" />
+
+        <EditText
+            android:id="@+id/edt_mobile_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+
+        <TextView
             android:id="@+id/textView5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/college_name"
+            android:layout_marginTop="8dp"
             android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_mobile_no" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/edt_college_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -192,44 +171,33 @@
             android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_college_name" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
+        <Spinner
+            android:id="@+id/spinner_course"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/edit_text_bg"
-            android:ems="10"
-            android:inputType="textPersonName"
+            android:entries="@array/array_course"
             android:padding="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Education"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName6"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_text_bg"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:padding="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        <!--        <EditText-->
+<!--            android:id="@+id/editTextTextPersonName5"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:background="@drawable/edit_text_bg"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:padding="8dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView6" />-->
+
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_register"
@@ -244,7 +212,7 @@
             app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner_course" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_cancel"

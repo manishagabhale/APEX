@@ -31,7 +31,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/edit_text_bg"
         android:drawablePadding="10dp"
-        android:hint="EMAIL/MOBILE"
+        android:hint="MOBILE"
         android:inputType="text"
         android:padding="15dp"
         android:layout_marginTop="8dp"
@@ -73,17 +73,17 @@
         android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/button"
         android:text="@string/log_in"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18dp"
+        android:layout_marginTop="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/forget_password"
         app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/forget_password" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
     <TextView
         android:id="@+id/textView8"
@@ -119,5 +119,27 @@
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/final_logo" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/black"
+        android:text="Agree to Term and conditions"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/forget_password" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Read term and conditions"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
