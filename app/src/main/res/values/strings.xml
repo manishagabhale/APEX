@@ -14,6 +14,8 @@
     <string name="otp_send">OTP sent</string>
     <string name="otp_not_send">OTP not sent</string>
 
+    <string name="underline_text"><u>Read</u></string>
+
     <array name="array_course">
         <item>Select Course</item>
         <item>B pharmacy 2nd Year</item>
@@ -37,4 +39,5 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_activity_bottom_navigatio">BottomNavigatioActivity</string>
 </resources>

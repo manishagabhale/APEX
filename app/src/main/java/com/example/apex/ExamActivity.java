@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -59,7 +60,13 @@ public class ExamActivity extends AppCompatActivity {
         QuestionAdapter adapter1 = new QuestionAdapter(this,exampleList);
         mRecyclerView.setAdapter(adapter1);
 
-
+       save_next.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(ExamActivity.this,ResultActivity2.class);
+               startActivity(intent);
+           }
+       });
 
   }
 //

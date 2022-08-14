@@ -1,9 +1,11 @@
 package com.example.apex;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +45,7 @@ public class ExamAdapter extends PagerAdapter {
         TextView option3tv = view.findViewById(R.id.txt_option3);
         TextView option4tv = view.findViewById(R.id.txt_option4);
 
+
         ExamModel examModel = model.get(position);
         String question = examModel.getQuestion();
         String option1 = examModel.getOption1();
@@ -58,10 +61,11 @@ public class ExamAdapter extends PagerAdapter {
         option4tv.setText(option4);
 
 
+
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "slide", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Good", Toast.LENGTH_SHORT).show();
             }
         });
 

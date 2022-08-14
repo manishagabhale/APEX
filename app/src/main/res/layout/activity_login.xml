@@ -79,7 +79,7 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/forget_password"
         app:layout_constraintStart_toStartOf="@+id/password"
@@ -125,7 +125,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:buttonTint="@color/black"
-        android:text="Agree to Term and conditions"
+        android:layout_marginTop="8dp"
+        android:text="Agree to term and conditions"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/password"
         app:layout_constraintTop_toBottomOf="@+id/forget_password" />
@@ -134,11 +135,10 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="Read term and conditions"
+        android:layout_marginStart="16dp"
+        android:text="@string/underline_text"
         android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toEndOf="@+id/checkBox2"
         app:layout_constraintTop_toTopOf="@+id/checkBox2" />
 
